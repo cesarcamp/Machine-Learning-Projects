@@ -1,6 +1,6 @@
 ![](C:\Users\danie\Desktop\presentacion ironhack\logo.svg)
 
-# Text classifier for Spanish text
+# Text classifier and sentiment analysis
 
 César Campuzano
 
