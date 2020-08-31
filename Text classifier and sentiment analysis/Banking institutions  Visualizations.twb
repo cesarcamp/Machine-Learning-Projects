@@ -1,0 +1,2683 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.0415.1946                               -->
+<workbook original-version='18.1' source-build='2020.2.0 (20202.20.0415.1946)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='bancomer_tableau' inline='true' name='federated.0tys0eg13c2ggp1gm65qz01fn6j1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='bancomer_tableau' name='textscan.1n2xsj91tt8zst1h56q4212xm7zy'>
+            <connection class='textscan' directory='C:/Users/danie/Desktop/Analisis de sentimiento/Sentiment-Analysis' filename='bancomer_tableau.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1n2xsj91tt8zst1h56q4212xm7zy' name='bancomer_tableau.csv' table='[bancomer_tableau#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='text' ordinal='1' />
+            <column datatype='real' name='sentiment' ordinal='2' />
+            <column datatype='real' name='polarity' ordinal='3' />
+            <column datatype='datetime' name='timestamp' ordinal='4' />
+            <column datatype='string' name='sentiment_def' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1n2xsj91tt8zst1h56q4212xm7zy' name='bancomer_tableau.csv' table='[bancomer_tableau#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='text' ordinal='1' />
+            <column datatype='real' name='sentiment' ordinal='2' />
+            <column datatype='real' name='polarity' ordinal='3' />
+            <column datatype='datetime' name='timestamp' ordinal='4' />
+            <column datatype='string' name='sentiment_def' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[bancomer_tableau.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[bancomer_tableau.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bancomer_tableau.csv_5B311CF685874D1DB33052DF11D644D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[text]</local-name>
+            <parent-name>[bancomer_tableau.csv]</parent-name>
+            <remote-alias>text</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bancomer_tableau.csv_5B311CF685874D1DB33052DF11D644D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sentiment</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sentiment]</local-name>
+            <parent-name>[bancomer_tableau.csv]</parent-name>
+            <remote-alias>sentiment</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bancomer_tableau.csv_5B311CF685874D1DB33052DF11D644D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>polarity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[polarity]</local-name>
+            <parent-name>[bancomer_tableau.csv]</parent-name>
+            <remote-alias>polarity</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bancomer_tableau.csv_5B311CF685874D1DB33052DF11D644D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>timestamp</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[timestamp]</local-name>
+            <parent-name>[bancomer_tableau.csv]</parent-name>
+            <remote-alias>timestamp</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bancomer_tableau.csv_5B311CF685874D1DB33052DF11D644D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sentiment_def</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sentiment_def]</local-name>
+            <parent-name>[bancomer_tableau.csv]</parent-name>
+            <remote-alias>sentiment_def</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bancomer_tableau.csv_5B311CF685874D1DB33052DF11D644D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' default-format='p0.00%' name='[Calculation1]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([polarity]) / TOTAL(COUNT([polarity]))'>
+          <table-calc ordering-type='Field'>
+            <order field='[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[dy:timestamp:ok]' />
+            <order field='[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[mn:timestamp:ok]' />
+            <order field='[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[none:sentiment_def:nk]' />
+          </table-calc>
+        </calculation>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='bancomer_tableau.csv' datatype='table' name='[__tableau_internal_object_id__].[bancomer_tableau.csv_5B311CF685874D1DB33052DF11D644D8]' role='measure' type='quantitative' />
+      <column caption='Polarity' datatype='real' name='[polarity]' role='measure' type='quantitative' />
+      <column caption='Sentiment#' datatype='real' name='[sentiment]' role='measure' type='quantitative' />
+      <column caption='Sentiment Def' datatype='string' name='[sentiment_def]' role='dimension' type='nominal' />
+      <column caption='Text' datatype='string' name='[text]' role='dimension' type='nominal' />
+      <column caption='Sentiment' datatype='datetime' name='[timestamp]' role='dimension' type='ordinal' />
+      <column-instance column='[timestamp]' derivation='Day' name='[dy:timestamp:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[timestamp]' derivation='Month' name='[mn:timestamp:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[sentiment_def]' derivation='None' name='[none:sentiment_def:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:sentiment_def:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Positive&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Negative&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Neutral&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='bancomer_tableau.csv' id='bancomer_tableau.csv_5B311CF685874D1DB33052DF11D644D8'>
+            <properties context=''>
+              <relation connection='textscan.1n2xsj91tt8zst1h56q4212xm7zy' name='bancomer_tableau.csv' table='[bancomer_tableau#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='text' ordinal='1' />
+                  <column datatype='real' name='sentiment' ordinal='2' />
+                  <column datatype='real' name='polarity' ordinal='3' />
+                  <column datatype='datetime' name='timestamp' ordinal='4' />
+                  <column datatype='string' name='sentiment_def' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='banamex_sentiment' inline='true' name='federated.0z6qz2s0asegni159dpl41g6l1ef' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='banamex_sentiment' name='textscan.1xqbwtq1tks6i31d0qe9402qimef'>
+            <connection class='textscan' directory='C:/Users/danie/Desktop/Analisis de sentimiento/Sentiment-Analysis' filename='banamex_sentiment.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1xqbwtq1tks6i31d0qe9402qimef' name='banamex_sentiment.csv' table='[banamex_sentiment#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='Unnamed: 0' ordinal='1' />
+            <column datatype='string' name='screen_name' ordinal='2' />
+            <column datatype='string' name='username' ordinal='3' />
+            <column datatype='integer' name='user_id' ordinal='4' />
+            <column datatype='integer' name='tweet_id' ordinal='5' />
+            <column datatype='string' name='tweet_url' ordinal='6' />
+            <column datatype='datetime' name='timestamp' ordinal='7' />
+            <column datatype='integer' name='timestamp_epochs' ordinal='8' />
+            <column datatype='string' name='text' ordinal='9' />
+            <column datatype='string' name='text_html' ordinal='10' />
+            <column datatype='string' name='links' ordinal='11' />
+            <column datatype='string' name='hashtags' ordinal='12' />
+            <column datatype='boolean' name='has_media' ordinal='13' />
+            <column datatype='string' name='img_urls' ordinal='14' />
+            <column datatype='string' name='video_url' ordinal='15' />
+            <column datatype='integer' name='likes' ordinal='16' />
+            <column datatype='integer' name='retweets' ordinal='17' />
+            <column datatype='integer' name='replies' ordinal='18' />
+            <column datatype='boolean' name='is_replied' ordinal='19' />
+            <column datatype='boolean' name='is_reply_to' ordinal='20' />
+            <column datatype='real' name='parent_tweet_id' ordinal='21' />
+            <column datatype='string' name='reply_to_users' ordinal='22' />
+            <column datatype='string' name='sentiment' ordinal='23' />
+            <column datatype='real' name='polarity' ordinal='24' />
+            <column datatype='string' name='polarity_text' ordinal='25' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1xqbwtq1tks6i31d0qe9402qimef' name='banamex_sentiment.csv' table='[banamex_sentiment#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='Unnamed: 0' ordinal='1' />
+            <column datatype='string' name='screen_name' ordinal='2' />
+            <column datatype='string' name='username' ordinal='3' />
+            <column datatype='integer' name='user_id' ordinal='4' />
+            <column datatype='integer' name='tweet_id' ordinal='5' />
+            <column datatype='string' name='tweet_url' ordinal='6' />
+            <column datatype='datetime' name='timestamp' ordinal='7' />
+            <column datatype='integer' name='timestamp_epochs' ordinal='8' />
+            <column datatype='string' name='text' ordinal='9' />
+            <column datatype='string' name='text_html' ordinal='10' />
+            <column datatype='string' name='links' ordinal='11' />
+            <column datatype='string' name='hashtags' ordinal='12' />
+            <column datatype='boolean' name='has_media' ordinal='13' />
+            <column datatype='string' name='img_urls' ordinal='14' />
+            <column datatype='string' name='video_url' ordinal='15' />
+            <column datatype='integer' name='likes' ordinal='16' />
+            <column datatype='integer' name='retweets' ordinal='17' />
+            <column datatype='integer' name='replies' ordinal='18' />
+            <column datatype='boolean' name='is_replied' ordinal='19' />
+            <column datatype='boolean' name='is_reply_to' ordinal='20' />
+            <column datatype='real' name='parent_tweet_id' ordinal='21' />
+            <column datatype='string' name='reply_to_users' ordinal='22' />
+            <column datatype='string' name='sentiment' ordinal='23' />
+            <column datatype='real' name='polarity' ordinal='24' />
+            <column datatype='string' name='polarity_text' ordinal='25' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[banamex_sentiment.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[banamex_sentiment.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banamex_sentiment.csv_C4F56F1AFE01474BA4F193A335277695]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unnamed: 0</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Unnamed: 0]</local-name>
+            <parent-name>[banamex_sentiment.csv]</parent-name>
+            <remote-alias>Unnamed: 0</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banamex_sentiment.csv_C4F56F1AFE01474BA4F193A335277695]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>screen_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[screen_name]</local-name>
+            <parent-name>[banamex_sentiment.csv]</parent-name>
+            <remote-alias>screen_name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banamex_sentiment.csv_C4F56F1AFE01474BA4F193A335277695]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>username</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[username]</local-name>
+            <parent-name>[banamex_sentiment.csv]</parent-name>
+            <remote-alias>username</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banamex_sentiment.csv_C4F56F1AFE01474BA4F193A335277695]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[user_id]</local-name>
+            <parent-name>[banamex_sentiment.csv]</parent-name>
+            <remote-alias>user_id</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banamex_sentiment.csv_C4F56F1AFE01474BA4F193A335277695]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tweet_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tweet_id]</local-name>
+            <parent-name>[banamex_sentiment.csv]</parent-name>
+            <remote-alias>tweet_id</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banamex_sentiment.csv_C4F56F1AFE01474BA4F193A335277695]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tweet_url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tweet_url]</local-name>
+            <parent-name>[banamex_sentiment.csv]</parent-name>
+            <remote-alias>tweet_url</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banamex_sentiment.csv_C4F56F1AFE01474BA4F193A335277695]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>timestamp</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[timestamp]</local-name>
+            <parent-name>[banamex_sentiment.csv]</parent-name>
+            <remote-alias>timestamp</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banamex_sentiment.csv_C4F56F1AFE01474BA4F193A335277695]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>timestamp_epochs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[timestamp_epochs]</local-name>
+            <parent-name>[banamex_sentiment.csv]</parent-name>
+            <remote-alias>timestamp_epochs</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banamex_sentiment.csv_C4F56F1AFE01474BA4F193A335277695]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[text]</local-name>
+            <parent-name>[banamex_sentiment.csv]</parent-name>
+            <remote-alias>text</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banamex_sentiment.csv_C4F56F1AFE01474BA4F193A335277695]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>text_html</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[text_html]</local-name>
+            <parent-name>[banamex_sentiment.csv]</parent-name>
+            <remote-alias>text_html</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banamex_sentiment.csv_C4F56F1AFE01474BA4F193A335277695]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>links</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[links]</local-name>
+            <parent-name>[banamex_sentiment.csv]</parent-name>
+            <remote-alias>links</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banamex_sentiment.csv_C4F56F1AFE01474BA4F193A335277695]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hashtags</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[hashtags]</local-name>
+            <parent-name>[banamex_sentiment.csv]</parent-name>
+            <remote-alias>hashtags</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banamex_sentiment.csv_C4F56F1AFE01474BA4F193A335277695]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>has_media</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[has_media]</local-name>
+            <parent-name>[banamex_sentiment.csv]</parent-name>
+            <remote-alias>has_media</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banamex_sentiment.csv_C4F56F1AFE01474BA4F193A335277695]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>img_urls</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[img_urls]</local-name>
+            <parent-name>[banamex_sentiment.csv]</parent-name>
+            <remote-alias>img_urls</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banamex_sentiment.csv_C4F56F1AFE01474BA4F193A335277695]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>video_url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[video_url]</local-name>
+            <parent-name>[banamex_sentiment.csv]</parent-name>
+            <remote-alias>video_url</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banamex_sentiment.csv_C4F56F1AFE01474BA4F193A335277695]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>likes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[likes]</local-name>
+            <parent-name>[banamex_sentiment.csv]</parent-name>
+            <remote-alias>likes</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banamex_sentiment.csv_C4F56F1AFE01474BA4F193A335277695]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>retweets</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[retweets]</local-name>
+            <parent-name>[banamex_sentiment.csv]</parent-name>
+            <remote-alias>retweets</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banamex_sentiment.csv_C4F56F1AFE01474BA4F193A335277695]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>replies</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[replies]</local-name>
+            <parent-name>[banamex_sentiment.csv]</parent-name>
+            <remote-alias>replies</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banamex_sentiment.csv_C4F56F1AFE01474BA4F193A335277695]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_replied</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[is_replied]</local-name>
+            <parent-name>[banamex_sentiment.csv]</parent-name>
+            <remote-alias>is_replied</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banamex_sentiment.csv_C4F56F1AFE01474BA4F193A335277695]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_reply_to</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[is_reply_to]</local-name>
+            <parent-name>[banamex_sentiment.csv]</parent-name>
+            <remote-alias>is_reply_to</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banamex_sentiment.csv_C4F56F1AFE01474BA4F193A335277695]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>parent_tweet_id</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[parent_tweet_id]</local-name>
+            <parent-name>[banamex_sentiment.csv]</parent-name>
+            <remote-alias>parent_tweet_id</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banamex_sentiment.csv_C4F56F1AFE01474BA4F193A335277695]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reply_to_users</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reply_to_users]</local-name>
+            <parent-name>[banamex_sentiment.csv]</parent-name>
+            <remote-alias>reply_to_users</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banamex_sentiment.csv_C4F56F1AFE01474BA4F193A335277695]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sentiment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sentiment]</local-name>
+            <parent-name>[banamex_sentiment.csv]</parent-name>
+            <remote-alias>sentiment</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banamex_sentiment.csv_C4F56F1AFE01474BA4F193A335277695]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>polarity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[polarity]</local-name>
+            <parent-name>[banamex_sentiment.csv]</parent-name>
+            <remote-alias>polarity</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banamex_sentiment.csv_C4F56F1AFE01474BA4F193A335277695]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>polarity_text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[polarity_text]</local-name>
+            <parent-name>[banamex_sentiment.csv]</parent-name>
+            <remote-alias>polarity_text</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banamex_sentiment.csv_C4F56F1AFE01474BA4F193A335277695]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='banamex_sentiment.csv' datatype='table' name='[__tableau_internal_object_id__].[banamex_sentiment.csv_C4F56F1AFE01474BA4F193A335277695]' role='measure' type='quantitative' />
+      <column caption='Has Media' datatype='boolean' name='[has_media]' role='dimension' type='nominal' />
+      <column caption='Hashtags' datatype='string' name='[hashtags]' role='dimension' type='nominal' />
+      <column caption='Img Urls' datatype='string' name='[img_urls]' role='dimension' type='nominal' />
+      <column caption='Is Replied' datatype='boolean' name='[is_replied]' role='dimension' type='nominal' />
+      <column caption='Is Reply To' datatype='boolean' name='[is_reply_to]' role='dimension' type='nominal' />
+      <column caption='Likes' datatype='integer' name='[likes]' role='measure' type='quantitative' />
+      <column caption='Links' datatype='string' name='[links]' role='dimension' type='nominal' />
+      <column caption='Parent Tweet Id' datatype='real' name='[parent_tweet_id]' role='dimension' type='ordinal' />
+      <column caption='Polarity' datatype='real' name='[polarity]' role='measure' type='quantitative' />
+      <column caption='Polarity Text' datatype='string' name='[polarity_text]' role='dimension' type='nominal' />
+      <column caption='Replies' datatype='integer' name='[replies]' role='measure' type='quantitative' />
+      <column caption='Reply To Users' datatype='string' name='[reply_to_users]' role='dimension' type='nominal' />
+      <column caption='Retweets' datatype='integer' name='[retweets]' role='measure' type='quantitative' />
+      <column caption='Screen Name' datatype='string' name='[screen_name]' role='dimension' type='nominal' />
+      <column caption='Sentiment' datatype='string' name='[sentiment]' role='dimension' type='nominal' />
+      <column caption='Text' datatype='string' name='[text]' role='dimension' type='nominal' />
+      <column caption='Text Html' datatype='string' name='[text_html]' role='dimension' type='nominal' />
+      <column caption='Timestamp' datatype='datetime' name='[timestamp]' role='dimension' type='ordinal' />
+      <column caption='Timestamp Epochs' datatype='integer' name='[timestamp_epochs]' role='measure' type='quantitative' />
+      <column caption='Tweet Id' datatype='integer' name='[tweet_id]' role='dimension' type='ordinal' />
+      <column caption='Tweet Url' datatype='string' name='[tweet_url]' role='dimension' type='nominal' />
+      <column caption='User Id' datatype='integer' name='[user_id]' role='dimension' type='ordinal' />
+      <column caption='Username' datatype='string' name='[username]' role='dimension' type='nominal' />
+      <column caption='Video Url' datatype='string' name='[video_url]' role='dimension' type='nominal' />
+      <column-instance column='[polarity_text]' derivation='None' name='[none:polarity_text:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:polarity_text:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Positive&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Negative&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Neutral&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='banamex_sentiment.csv' id='banamex_sentiment.csv_C4F56F1AFE01474BA4F193A335277695'>
+            <properties context=''>
+              <relation connection='textscan.1xqbwtq1tks6i31d0qe9402qimef' name='banamex_sentiment.csv' table='[banamex_sentiment#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='Unnamed: 0' ordinal='1' />
+                  <column datatype='string' name='screen_name' ordinal='2' />
+                  <column datatype='string' name='username' ordinal='3' />
+                  <column datatype='integer' name='user_id' ordinal='4' />
+                  <column datatype='integer' name='tweet_id' ordinal='5' />
+                  <column datatype='string' name='tweet_url' ordinal='6' />
+                  <column datatype='datetime' name='timestamp' ordinal='7' />
+                  <column datatype='integer' name='timestamp_epochs' ordinal='8' />
+                  <column datatype='string' name='text' ordinal='9' />
+                  <column datatype='string' name='text_html' ordinal='10' />
+                  <column datatype='string' name='links' ordinal='11' />
+                  <column datatype='string' name='hashtags' ordinal='12' />
+                  <column datatype='boolean' name='has_media' ordinal='13' />
+                  <column datatype='string' name='img_urls' ordinal='14' />
+                  <column datatype='string' name='video_url' ordinal='15' />
+                  <column datatype='integer' name='likes' ordinal='16' />
+                  <column datatype='integer' name='retweets' ordinal='17' />
+                  <column datatype='integer' name='replies' ordinal='18' />
+                  <column datatype='boolean' name='is_replied' ordinal='19' />
+                  <column datatype='boolean' name='is_reply_to' ordinal='20' />
+                  <column datatype='real' name='parent_tweet_id' ordinal='21' />
+                  <column datatype='string' name='reply_to_users' ordinal='22' />
+                  <column datatype='string' name='sentiment' ordinal='23' />
+                  <column datatype='real' name='polarity' ordinal='24' />
+                  <column datatype='string' name='polarity_text' ordinal='25' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='santander_sentiment' inline='true' name='federated.0rz0lbs0efp3ui10bp7ma0gychlf' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='santander_sentiment' name='textscan.0xql3uo180csaz19plgue1cnu021'>
+            <connection class='textscan' directory='C:/Users/danie/Desktop/Analisis de sentimiento/Sentiment-Analysis' filename='santander_sentiment.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0xql3uo180csaz19plgue1cnu021' name='santander_sentiment.csv' table='[santander_sentiment#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='Unnamed: 0' ordinal='1' />
+            <column datatype='string' name='screen_name' ordinal='2' />
+            <column datatype='string' name='username' ordinal='3' />
+            <column datatype='integer' name='user_id' ordinal='4' />
+            <column datatype='integer' name='tweet_id' ordinal='5' />
+            <column datatype='string' name='tweet_url' ordinal='6' />
+            <column datatype='datetime' name='timestamp' ordinal='7' />
+            <column datatype='integer' name='timestamp_epochs' ordinal='8' />
+            <column datatype='string' name='text' ordinal='9' />
+            <column datatype='string' name='text_html' ordinal='10' />
+            <column datatype='string' name='links' ordinal='11' />
+            <column datatype='string' name='hashtags' ordinal='12' />
+            <column datatype='boolean' name='has_media' ordinal='13' />
+            <column datatype='string' name='img_urls' ordinal='14' />
+            <column datatype='string' name='video_url' ordinal='15' />
+            <column datatype='integer' name='likes' ordinal='16' />
+            <column datatype='integer' name='retweets' ordinal='17' />
+            <column datatype='integer' name='replies' ordinal='18' />
+            <column datatype='boolean' name='is_replied' ordinal='19' />
+            <column datatype='boolean' name='is_reply_to' ordinal='20' />
+            <column datatype='real' name='parent_tweet_id' ordinal='21' />
+            <column datatype='string' name='reply_to_users' ordinal='22' />
+            <column datatype='string' name='sentiment' ordinal='23' />
+            <column datatype='real' name='polarity' ordinal='24' />
+            <column datatype='string' name='polarity_text' ordinal='25' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0xql3uo180csaz19plgue1cnu021' name='santander_sentiment.csv' table='[santander_sentiment#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='Unnamed: 0' ordinal='1' />
+            <column datatype='string' name='screen_name' ordinal='2' />
+            <column datatype='string' name='username' ordinal='3' />
+            <column datatype='integer' name='user_id' ordinal='4' />
+            <column datatype='integer' name='tweet_id' ordinal='5' />
+            <column datatype='string' name='tweet_url' ordinal='6' />
+            <column datatype='datetime' name='timestamp' ordinal='7' />
+            <column datatype='integer' name='timestamp_epochs' ordinal='8' />
+            <column datatype='string' name='text' ordinal='9' />
+            <column datatype='string' name='text_html' ordinal='10' />
+            <column datatype='string' name='links' ordinal='11' />
+            <column datatype='string' name='hashtags' ordinal='12' />
+            <column datatype='boolean' name='has_media' ordinal='13' />
+            <column datatype='string' name='img_urls' ordinal='14' />
+            <column datatype='string' name='video_url' ordinal='15' />
+            <column datatype='integer' name='likes' ordinal='16' />
+            <column datatype='integer' name='retweets' ordinal='17' />
+            <column datatype='integer' name='replies' ordinal='18' />
+            <column datatype='boolean' name='is_replied' ordinal='19' />
+            <column datatype='boolean' name='is_reply_to' ordinal='20' />
+            <column datatype='real' name='parent_tweet_id' ordinal='21' />
+            <column datatype='string' name='reply_to_users' ordinal='22' />
+            <column datatype='string' name='sentiment' ordinal='23' />
+            <column datatype='real' name='polarity' ordinal='24' />
+            <column datatype='string' name='polarity_text' ordinal='25' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[santander_sentiment.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[santander_sentiment.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[santander_sentiment.csv_7E2E82B614FC47DF906B131D4383140C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unnamed: 0</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Unnamed: 0]</local-name>
+            <parent-name>[santander_sentiment.csv]</parent-name>
+            <remote-alias>Unnamed: 0</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[santander_sentiment.csv_7E2E82B614FC47DF906B131D4383140C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>screen_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[screen_name]</local-name>
+            <parent-name>[santander_sentiment.csv]</parent-name>
+            <remote-alias>screen_name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[santander_sentiment.csv_7E2E82B614FC47DF906B131D4383140C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>username</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[username]</local-name>
+            <parent-name>[santander_sentiment.csv]</parent-name>
+            <remote-alias>username</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[santander_sentiment.csv_7E2E82B614FC47DF906B131D4383140C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[user_id]</local-name>
+            <parent-name>[santander_sentiment.csv]</parent-name>
+            <remote-alias>user_id</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[santander_sentiment.csv_7E2E82B614FC47DF906B131D4383140C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tweet_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tweet_id]</local-name>
+            <parent-name>[santander_sentiment.csv]</parent-name>
+            <remote-alias>tweet_id</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[santander_sentiment.csv_7E2E82B614FC47DF906B131D4383140C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tweet_url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tweet_url]</local-name>
+            <parent-name>[santander_sentiment.csv]</parent-name>
+            <remote-alias>tweet_url</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[santander_sentiment.csv_7E2E82B614FC47DF906B131D4383140C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>timestamp</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[timestamp]</local-name>
+            <parent-name>[santander_sentiment.csv]</parent-name>
+            <remote-alias>timestamp</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[santander_sentiment.csv_7E2E82B614FC47DF906B131D4383140C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>timestamp_epochs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[timestamp_epochs]</local-name>
+            <parent-name>[santander_sentiment.csv]</parent-name>
+            <remote-alias>timestamp_epochs</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[santander_sentiment.csv_7E2E82B614FC47DF906B131D4383140C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[text]</local-name>
+            <parent-name>[santander_sentiment.csv]</parent-name>
+            <remote-alias>text</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[santander_sentiment.csv_7E2E82B614FC47DF906B131D4383140C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>text_html</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[text_html]</local-name>
+            <parent-name>[santander_sentiment.csv]</parent-name>
+            <remote-alias>text_html</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[santander_sentiment.csv_7E2E82B614FC47DF906B131D4383140C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>links</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[links]</local-name>
+            <parent-name>[santander_sentiment.csv]</parent-name>
+            <remote-alias>links</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[santander_sentiment.csv_7E2E82B614FC47DF906B131D4383140C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hashtags</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[hashtags]</local-name>
+            <parent-name>[santander_sentiment.csv]</parent-name>
+            <remote-alias>hashtags</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[santander_sentiment.csv_7E2E82B614FC47DF906B131D4383140C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>has_media</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[has_media]</local-name>
+            <parent-name>[santander_sentiment.csv]</parent-name>
+            <remote-alias>has_media</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[santander_sentiment.csv_7E2E82B614FC47DF906B131D4383140C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>img_urls</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[img_urls]</local-name>
+            <parent-name>[santander_sentiment.csv]</parent-name>
+            <remote-alias>img_urls</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[santander_sentiment.csv_7E2E82B614FC47DF906B131D4383140C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>video_url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[video_url]</local-name>
+            <parent-name>[santander_sentiment.csv]</parent-name>
+            <remote-alias>video_url</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[santander_sentiment.csv_7E2E82B614FC47DF906B131D4383140C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>likes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[likes]</local-name>
+            <parent-name>[santander_sentiment.csv]</parent-name>
+            <remote-alias>likes</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[santander_sentiment.csv_7E2E82B614FC47DF906B131D4383140C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>retweets</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[retweets]</local-name>
+            <parent-name>[santander_sentiment.csv]</parent-name>
+            <remote-alias>retweets</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[santander_sentiment.csv_7E2E82B614FC47DF906B131D4383140C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>replies</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[replies]</local-name>
+            <parent-name>[santander_sentiment.csv]</parent-name>
+            <remote-alias>replies</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[santander_sentiment.csv_7E2E82B614FC47DF906B131D4383140C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_replied</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[is_replied]</local-name>
+            <parent-name>[santander_sentiment.csv]</parent-name>
+            <remote-alias>is_replied</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[santander_sentiment.csv_7E2E82B614FC47DF906B131D4383140C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_reply_to</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[is_reply_to]</local-name>
+            <parent-name>[santander_sentiment.csv]</parent-name>
+            <remote-alias>is_reply_to</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[santander_sentiment.csv_7E2E82B614FC47DF906B131D4383140C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>parent_tweet_id</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[parent_tweet_id]</local-name>
+            <parent-name>[santander_sentiment.csv]</parent-name>
+            <remote-alias>parent_tweet_id</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[santander_sentiment.csv_7E2E82B614FC47DF906B131D4383140C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reply_to_users</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reply_to_users]</local-name>
+            <parent-name>[santander_sentiment.csv]</parent-name>
+            <remote-alias>reply_to_users</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[santander_sentiment.csv_7E2E82B614FC47DF906B131D4383140C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sentiment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sentiment]</local-name>
+            <parent-name>[santander_sentiment.csv]</parent-name>
+            <remote-alias>sentiment</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[santander_sentiment.csv_7E2E82B614FC47DF906B131D4383140C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>polarity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[polarity]</local-name>
+            <parent-name>[santander_sentiment.csv]</parent-name>
+            <remote-alias>polarity</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[santander_sentiment.csv_7E2E82B614FC47DF906B131D4383140C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>polarity_text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[polarity_text]</local-name>
+            <parent-name>[santander_sentiment.csv]</parent-name>
+            <remote-alias>polarity_text</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[santander_sentiment.csv_7E2E82B614FC47DF906B131D4383140C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='santander_sentiment.csv' datatype='table' name='[__tableau_internal_object_id__].[santander_sentiment.csv_7E2E82B614FC47DF906B131D4383140C]' role='measure' type='quantitative' />
+      <column caption='Has Media' datatype='boolean' name='[has_media]' role='dimension' type='nominal' />
+      <column caption='Hashtags' datatype='string' name='[hashtags]' role='dimension' type='nominal' />
+      <column caption='Img Urls' datatype='string' name='[img_urls]' role='dimension' type='nominal' />
+      <column caption='Is Replied' datatype='boolean' name='[is_replied]' role='dimension' type='nominal' />
+      <column caption='Is Reply To' datatype='boolean' name='[is_reply_to]' role='dimension' type='nominal' />
+      <column caption='Likes' datatype='integer' name='[likes]' role='measure' type='quantitative' />
+      <column caption='Links' datatype='string' name='[links]' role='dimension' type='nominal' />
+      <column caption='Parent Tweet Id' datatype='real' name='[parent_tweet_id]' role='dimension' type='ordinal' />
+      <column caption='Polarity' datatype='real' name='[polarity]' role='measure' type='quantitative' />
+      <column caption='Polarity Text' datatype='string' name='[polarity_text]' role='dimension' type='nominal' />
+      <column caption='Replies' datatype='integer' name='[replies]' role='measure' type='quantitative' />
+      <column caption='Reply To Users' datatype='string' name='[reply_to_users]' role='dimension' type='nominal' />
+      <column caption='Retweets' datatype='integer' name='[retweets]' role='measure' type='quantitative' />
+      <column caption='Screen Name' datatype='string' name='[screen_name]' role='dimension' type='nominal' />
+      <column caption='Sentiment' datatype='string' name='[sentiment]' role='dimension' type='nominal' />
+      <column caption='Text' datatype='string' name='[text]' role='dimension' type='nominal' />
+      <column caption='Text Html' datatype='string' name='[text_html]' role='dimension' type='nominal' />
+      <column caption='Timestamp' datatype='datetime' name='[timestamp]' role='dimension' type='ordinal' />
+      <column caption='Timestamp Epochs' datatype='integer' name='[timestamp_epochs]' role='measure' type='quantitative' />
+      <column caption='Tweet Id' datatype='integer' name='[tweet_id]' role='dimension' type='ordinal' />
+      <column caption='Tweet Url' datatype='string' name='[tweet_url]' role='dimension' type='nominal' />
+      <column caption='User Id' datatype='integer' name='[user_id]' role='dimension' type='ordinal' />
+      <column caption='Username' datatype='string' name='[username]' role='dimension' type='nominal' />
+      <column caption='Video Url' datatype='string' name='[video_url]' role='dimension' type='nominal' />
+      <column-instance column='[polarity_text]' derivation='None' name='[none:polarity_text:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:polarity_text:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Positive&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Negative&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Neutral&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='santander_sentiment.csv' id='santander_sentiment.csv_7E2E82B614FC47DF906B131D4383140C'>
+            <properties context=''>
+              <relation connection='textscan.0xql3uo180csaz19plgue1cnu021' name='santander_sentiment.csv' table='[santander_sentiment#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='Unnamed: 0' ordinal='1' />
+                  <column datatype='string' name='screen_name' ordinal='2' />
+                  <column datatype='string' name='username' ordinal='3' />
+                  <column datatype='integer' name='user_id' ordinal='4' />
+                  <column datatype='integer' name='tweet_id' ordinal='5' />
+                  <column datatype='string' name='tweet_url' ordinal='6' />
+                  <column datatype='datetime' name='timestamp' ordinal='7' />
+                  <column datatype='integer' name='timestamp_epochs' ordinal='8' />
+                  <column datatype='string' name='text' ordinal='9' />
+                  <column datatype='string' name='text_html' ordinal='10' />
+                  <column datatype='string' name='links' ordinal='11' />
+                  <column datatype='string' name='hashtags' ordinal='12' />
+                  <column datatype='boolean' name='has_media' ordinal='13' />
+                  <column datatype='string' name='img_urls' ordinal='14' />
+                  <column datatype='string' name='video_url' ordinal='15' />
+                  <column datatype='integer' name='likes' ordinal='16' />
+                  <column datatype='integer' name='retweets' ordinal='17' />
+                  <column datatype='integer' name='replies' ordinal='18' />
+                  <column datatype='boolean' name='is_replied' ordinal='19' />
+                  <column datatype='boolean' name='is_reply_to' ordinal='20' />
+                  <column datatype='real' name='parent_tweet_id' ordinal='21' />
+                  <column datatype='string' name='reply_to_users' ordinal='22' />
+                  <column datatype='string' name='sentiment' ordinal='23' />
+                  <column datatype='real' name='polarity' ordinal='24' />
+                  <column datatype='string' name='polarity_text' ordinal='25' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='vocab' inline='true' name='federated.0jzwehz0zv0jsw15h9aho0dyeqtt' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='vocab' name='textscan.0axq9581pa19z4114uxqn0w3t8s5'>
+            <connection class='textscan' directory='C:/Users/danie/Desktop/Analisis de sentimiento/Sentiment-Analysis' filename='vocab.txt' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0axq9581pa19z4114uxqn0w3t8s5' name='vocab.txt' table='[vocab#txt]' type='table'>
+          <columns character-set='windows-1252' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='sabian' ordinal='0' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0axq9581pa19z4114uxqn0w3t8s5' name='vocab.txt' table='[vocab#txt]' type='table'>
+          <columns character-set='windows-1252' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='sabian' ordinal='0' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[vocab.txt]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;ibm-5348_P100-1997&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sabian</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sabian]</local-name>
+            <parent-name>[vocab.txt]</parent-name>
+            <remote-alias>sabian</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[vocab.txt_F3D77DE8C81742578508471DC092AA2E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='vocab.txt' datatype='table' name='[__tableau_internal_object_id__].[vocab.txt_F3D77DE8C81742578508471DC092AA2E]' role='measure' type='quantitative' />
+      <column caption='Sabian' datatype='string' name='[sabian]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='vocab.txt' id='vocab.txt_F3D77DE8C81742578508471DC092AA2E'>
+            <properties context=''>
+              <relation connection='textscan.0axq9581pa19z4114uxqn0w3t8s5' name='vocab.txt' table='[vocab#txt]' type='table'>
+                <columns character-set='windows-1252' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='sabian' ordinal='0' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Banamex'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='banamex_sentiment' name='federated.0z6qz2s0asegni159dpl41g6l1ef' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0z6qz2s0asegni159dpl41g6l1ef'>
+            <column-instance column='[polarity]' derivation='Count' name='[cnt:polarity:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[polarity_text]' derivation='None' name='[none:polarity_text:nk]' pivot='key' type='nominal' />
+            <column-instance column='[polarity]' derivation='Count' name='[pcto:cnt:polarity:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column caption='Polarity' datatype='real' name='[polarity]' role='measure' type='quantitative' />
+            <column caption='Polarity Text' datatype='string' name='[polarity_text]' role='dimension' type='nominal' />
+            <column caption='Timestamp' datatype='datetime' name='[timestamp]' role='dimension' type='ordinal' />
+            <column-instance column='[timestamp]' derivation='Year' name='[yr:timestamp:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0z6qz2s0asegni159dpl41g6l1ef].[cnt:polarity:qk]' included-values='all' />
+          <slices>
+            <column>[federated.0z6qz2s0asegni159dpl41g6l1ef].[cnt:polarity:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='title'>
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='background-color' value='#f0f3fa' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0z6qz2s0asegni159dpl41g6l1ef].[none:polarity_text:nk]' />
+              <size column='[federated.0z6qz2s0asegni159dpl41g6l1ef].[pcto:cnt:polarity:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0z6qz2s0asegni159dpl41g6l1ef].[yr:timestamp:ok]</rows>
+        <cols />
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[federated.0z6qz2s0asegni159dpl41g6l1ef].[yr:timestamp:ok]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0z6qz2s0asegni159dpl41g6l1ef].[cnt:polarity:qk]</field>
+                  <field>[federated.0z6qz2s0asegni159dpl41g6l1ef].[none:polarity_text:nk]</field>
+                  <field>[federated.0z6qz2s0asegni159dpl41g6l1ef].[yr:timestamp:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>6006</value>
+                <value>&quot;Negative&quot;</value>
+                <value>2020</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='17' y='34' />
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[federated.0z6qz2s0asegni159dpl41g6l1ef].[yr:timestamp:ok]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0z6qz2s0asegni159dpl41g6l1ef].[cnt:polarity:qk]</field>
+                  <field>[federated.0z6qz2s0asegni159dpl41g6l1ef].[none:polarity_text:nk]</field>
+                  <field>[federated.0z6qz2s0asegni159dpl41g6l1ef].[yr:timestamp:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2058</value>
+                <value>&quot;Neutral&quot;</value>
+                <value>2020</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[federated.0z6qz2s0asegni159dpl41g6l1ef].[yr:timestamp:ok]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0z6qz2s0asegni159dpl41g6l1ef].[cnt:polarity:qk]</field>
+                  <field>[federated.0z6qz2s0asegni159dpl41g6l1ef].[none:polarity_text:nk]</field>
+                  <field>[federated.0z6qz2s0asegni159dpl41g6l1ef].[yr:timestamp:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>3377</value>
+                <value>&quot;Positive&quot;</value>
+                <value>2020</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{C64BB7C0-2DA4-40FD-BE89-B1B52B43EDA0}' />
+    </worksheet>
+    <worksheet name='Bancomer'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bancomer_tableau' name='federated.0tys0eg13c2ggp1gm65qz01fn6j1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0tys0eg13c2ggp1gm65qz01fn6j1'>
+            <column-instance column='[polarity]' derivation='Count' name='[cnt:polarity:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[timestamp]' derivation='Month' name='[mn:timestamp:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[sentiment_def]' derivation='None' name='[none:sentiment_def:nk]' pivot='key' type='nominal' />
+            <column-instance column='[polarity]' derivation='Count' name='[pcto:cnt:polarity:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column caption='Polarity' datatype='real' name='[polarity]' role='measure' type='quantitative' />
+            <column caption='Sentiment Def' datatype='string' name='[sentiment_def]' role='dimension' type='nominal' />
+            <column caption='Sentiment' datatype='datetime' name='[timestamp]' role='dimension' type='ordinal' />
+            <column-instance column='[timestamp]' derivation='Year' name='[yr:timestamp:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[mn:timestamp:ok]'>
+            <groupfilter function='level-members' level='[mn:timestamp:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[mn:timestamp:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='title'>
+            <format attr='background-color' value='#e9f3f2' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[none:sentiment_def:nk]' />
+              <size column='[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[pcto:cnt:polarity:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[yr:timestamp:ok]</rows>
+        <cols />
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[yr:timestamp:ok]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[cnt:polarity:qk]</field>
+                  <field>[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[none:sentiment_def:nk]</field>
+                  <field>[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[yr:timestamp:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>6418</value>
+                <value>&quot;Negative&quot;</value>
+                <value>2020</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='17' y='39' />
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[yr:timestamp:ok]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[cnt:polarity:qk]</field>
+                  <field>[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[none:sentiment_def:nk]</field>
+                  <field>[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[yr:timestamp:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2705</value>
+                <value>&quot;Neutral&quot;</value>
+                <value>2020</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[yr:timestamp:ok]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[cnt:polarity:qk]</field>
+                  <field>[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[none:sentiment_def:nk]</field>
+                  <field>[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[yr:timestamp:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>3966</value>
+                <value>&quot;Positive&quot;</value>
+                <value>2020</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{B5066979-9040-4BAF-85ED-BC1BA8837FDA}' />
+    </worksheet>
+    <worksheet name='Santander'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='santander_sentiment' name='federated.0rz0lbs0efp3ui10bp7ma0gychlf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rz0lbs0efp3ui10bp7ma0gychlf'>
+            <column-instance column='[polarity_text]' derivation='None' name='[none:polarity_text:nk]' pivot='key' type='nominal' />
+            <column-instance column='[polarity]' derivation='Count' name='[pcto:cnt:polarity:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column caption='Polarity' datatype='real' name='[polarity]' role='measure' type='quantitative' />
+            <column caption='Polarity Text' datatype='string' name='[polarity_text]' role='dimension' type='nominal' />
+            <column caption='Timestamp' datatype='datetime' name='[timestamp]' role='dimension' type='ordinal' />
+            <column-instance column='[timestamp]' derivation='Year' name='[yr:timestamp:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='title'>
+            <format attr='background-color' value='#e9f3f2' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0rz0lbs0efp3ui10bp7ma0gychlf].[none:polarity_text:nk]' />
+              <size column='[federated.0rz0lbs0efp3ui10bp7ma0gychlf].[pcto:cnt:polarity:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0rz0lbs0efp3ui10bp7ma0gychlf].[yr:timestamp:ok]</rows>
+        <cols />
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[federated.0rz0lbs0efp3ui10bp7ma0gychlf].[yr:timestamp:ok]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0rz0lbs0efp3ui10bp7ma0gychlf].[none:polarity_text:nk]</field>
+                  <field>[federated.0rz0lbs0efp3ui10bp7ma0gychlf].[yr:timestamp:ok]</field>
+                  <field>[federated.0rz0lbs0efp3ui10bp7ma0gychlf].[pcto:cnt:polarity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Negative&quot;</value>
+                <value>2020</value>
+                <value>0.53505078028238795</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='17' y='-32' />
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[federated.0rz0lbs0efp3ui10bp7ma0gychlf].[yr:timestamp:ok]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0rz0lbs0efp3ui10bp7ma0gychlf].[none:polarity_text:nk]</field>
+                  <field>[federated.0rz0lbs0efp3ui10bp7ma0gychlf].[yr:timestamp:ok]</field>
+                  <field>[federated.0rz0lbs0efp3ui10bp7ma0gychlf].[pcto:cnt:polarity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Neutral&quot;</value>
+                <value>2020</value>
+                <value>0.16893732970027248</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[federated.0rz0lbs0efp3ui10bp7ma0gychlf].[yr:timestamp:ok]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0rz0lbs0efp3ui10bp7ma0gychlf].[none:polarity_text:nk]</field>
+                  <field>[federated.0rz0lbs0efp3ui10bp7ma0gychlf].[yr:timestamp:ok]</field>
+                  <field>[federated.0rz0lbs0efp3ui10bp7ma0gychlf].[pcto:cnt:polarity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Positive&quot;</value>
+                <value>2020</value>
+                <value>0.29601189001733963</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{4E1D255C-F256-4D0E-8964-92C8766DD1C1}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Banamex sentiment'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='banamex_sentiment' name='federated.0z6qz2s0asegni159dpl41g6l1ef' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0z6qz2s0asegni159dpl41g6l1ef'>
+        <column-instance column='[polarity]' derivation='Count' name='[cnt:polarity:qk]' pivot='key' type='quantitative' />
+        <column caption='Polarity' datatype='real' name='[polarity]' role='measure' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='7' param='horz' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98000' id='5' w='82400' x='800' y='1000'>
+              <zone h='98000' id='3' name='Banamex' w='82400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' w='16000' x='83200' y='1000'>
+              <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='8625' id='8' name='Banamex' param='[federated.0z6qz2s0asegni159dpl41g6l1ef].[cnt:polarity:qk]' show-domain='false' show-null-ctrls='false' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='10750' id='9' name='Banamex' pane-specification-id='0' param='[federated.0z6qz2s0asegni159dpl41g6l1ef].[none:polarity_text:nk]' w='16000' x='83200' y='9625'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='size' _.fcp.SetMembershipControl.true...type-v2='size' h='5750' id='10' name='Banamex' pane-specification-id='0' param='[federated.0z6qz2s0asegni159dpl41g6l1ef].[pcto:cnt:polarity:qk]' w='16000' x='83200' y='20375'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='16' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='15' param='vert' w='98400' x='800' y='1000'>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='8625' id='8' name='Banamex' param='[federated.0z6qz2s0asegni159dpl41g6l1ef].[cnt:polarity:qk]' show-domain='false' show-null-ctrls='false' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Banamex' w='82400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='10750' id='9' name='Banamex' pane-specification-id='0' param='[federated.0z6qz2s0asegni159dpl41g6l1ef].[none:polarity_text:nk]' w='16000' x='83200' y='9625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='size' _.fcp.SetMembershipControl.true...type-v2='size' h='5750' id='10' name='Banamex' pane-specification-id='0' param='[federated.0z6qz2s0asegni159dpl41g6l1ef].[pcto:cnt:polarity:qk]' w='16000' x='83200' y='20375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C62FC82A-074C-4B2E-BA99-A008E04AFB15}' />
+    </dashboard>
+    <dashboard name='Bancomer sentiment'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='7' param='horz' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98000' id='5' w='80800' x='800' y='1000'>
+              <zone h='98000' id='3' name='Bancomer' w='80800' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' fixed-size='176' h='98000' id='6' is-fixed='true' param='vert' w='17600' x='81600' y='1000'>
+              <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='10750' id='8' name='Bancomer' pane-specification-id='0' param='[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[none:sentiment_def:nk]' w='17600' x='81600' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='size' _.fcp.SetMembershipControl.true...type-v2='size' h='5750' id='9' name='Bancomer' pane-specification-id='0' param='[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[pcto:cnt:polarity:qk]' w='17600' x='81600' y='11750'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='15' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='14' param='vert' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Bancomer' w='80800' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='10750' id='8' name='Bancomer' pane-specification-id='0' param='[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[none:sentiment_def:nk]' w='17600' x='81600' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='size' _.fcp.SetMembershipControl.true...type-v2='size' h='5750' id='9' name='Bancomer' pane-specification-id='0' param='[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[pcto:cnt:polarity:qk]' w='17600' x='81600' y='11750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{7413C341-2F41-4652-BD41-387B89DC7AF3}' />
+    </dashboard>
+    <dashboard name='Dashboard 4'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='13' param='horz' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='7' param='horz' w='98400' x='800' y='1000'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98000' id='5' w='98400' x='800' y='1000'>
+                <zone h='49000' id='3' name='Bancomer' w='49200' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='49000' id='10' name='Banamex' w='49200' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='98000' id='11' name='Santander' w='49200' x='50000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='900' minheight='900' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='15' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='14' param='vert' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='Bancomer' w='49200' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98000' id='11' is-fixed='true' name='Santander' w='49200' x='50000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='10' is-fixed='true' name='Banamex' w='49200' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{B53D99DB-5660-44F0-9239-000E1A14F9BD}' />
+    </dashboard>
+    <dashboard name='Santander sentiment'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='7' param='horz' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98000' id='5' w='82400' x='800' y='1000'>
+              <zone h='98000' id='3' name='Santander' w='82400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' w='16000' x='83200' y='1000'>
+              <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='10750' id='8' name='Santander' pane-specification-id='0' param='[federated.0rz0lbs0efp3ui10bp7ma0gychlf].[none:polarity_text:nk]' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='size' _.fcp.SetMembershipControl.true...type-v2='size' h='5750' id='9' name='Santander' pane-specification-id='0' param='[federated.0rz0lbs0efp3ui10bp7ma0gychlf].[pcto:cnt:polarity:qk]' w='16000' x='83200' y='11750'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='15' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='14' param='vert' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Santander' w='82400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='10750' id='8' name='Santander' pane-specification-id='0' param='[federated.0rz0lbs0efp3ui10bp7ma0gychlf].[none:polarity_text:nk]' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='size' _.fcp.SetMembershipControl.true...type-v2='size' h='5750' id='9' name='Santander' pane-specification-id='0' param='[federated.0rz0lbs0efp3ui10bp7ma0gychlf].[pcto:cnt:polarity:qk]' w='16000' x='83200' y='11750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{FF6D20F0-3EC8-4018-A4BD-4076A2FECC4F}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='93'>
+    <window class='worksheet' name='Bancomer'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[none:sentiment_def:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[pcto:cnt:polarity:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[cnt:polarity:qk]</field>
+            <field>[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[mn:timestamp:ok]</field>
+            <field>[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[none:sentiment_def:nk]</field>
+            <field>[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[tyr:timestamp:ok]</field>
+            <field>[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[yr:timestamp:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{56A5AF90-7420-41B0-8900-A86C2FEE0C1A}' />
+    </window>
+    <window class='worksheet' name='Banamex'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0z6qz2s0asegni159dpl41g6l1ef].[cnt:polarity:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.0z6qz2s0asegni159dpl41g6l1ef].[none:polarity_text:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0z6qz2s0asegni159dpl41g6l1ef].[pcto:cnt:polarity:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[none:sentiment_def:nk]</field>
+            <field>[federated.0z6qz2s0asegni159dpl41g6l1ef].[mn:timestamp:ok]</field>
+            <field>[federated.0z6qz2s0asegni159dpl41g6l1ef].[none:polarity_text:nk]</field>
+            <field>[federated.0z6qz2s0asegni159dpl41g6l1ef].[yr:timestamp:ok]</field>
+            <field>[federated.13oq4t11w23hbj1dgds2q0xbvtrj].[none:sentiment:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C197AFB8-3D59-4ACD-BAC5-EA9EC40F01A4}' />
+    </window>
+    <window class='worksheet' name='Santander'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0rz0lbs0efp3ui10bp7ma0gychlf].[none:polarity_text:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0rz0lbs0efp3ui10bp7ma0gychlf].[pcto:cnt:polarity:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0rz0lbs0efp3ui10bp7ma0gychlf].[cnt:polarity:qk]</field>
+            <field>[federated.0rz0lbs0efp3ui10bp7ma0gychlf].[none:polarity_text:nk]</field>
+            <field>[federated.0rz0lbs0efp3ui10bp7ma0gychlf].[yr:timestamp:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{ED64B9DC-7F5F-408B-A354-67E24AC96A18}' />
+    </window>
+    <window class='dashboard' name='Bancomer sentiment'>
+      <viewpoints>
+        <viewpoint name='Bancomer'>
+          <highlight>
+            <color-one-way>
+              <field>[federated.0tys0eg13c2ggp1gm65qz01fn6j1].[none:sentiment_def:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{BC452BAE-9037-4E1E-8217-AB83F6C0F909}' />
+    </window>
+    <window class='dashboard' name='Banamex sentiment'>
+      <viewpoints>
+        <viewpoint name='Banamex'>
+          <highlight>
+            <color-one-way>
+              <field>[federated.0z6qz2s0asegni159dpl41g6l1ef].[none:polarity_text:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{40FBDAFE-554D-405F-842E-B7AC1CCBC0A4}' />
+    </window>
+    <window class='dashboard' name='Santander sentiment'>
+      <viewpoints>
+        <viewpoint name='Santander'>
+          <highlight>
+            <color-one-way>
+              <field>[federated.0rz0lbs0efp3ui10bp7ma0gychlf].[none:polarity_text:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{367FDCEF-5F9E-4CF5-85D4-757115A944BB}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 4'>
+      <viewpoints>
+        <viewpoint name='Banamex' />
+        <viewpoint name='Bancomer' />
+        <viewpoint name='Santander' />
+      </viewpoints>
+      <active id='11' />
+      <simple-id uuid='{A49DEB03-0A26-43E4-B8E5-AD720F9F89B9}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='184' name='Banamex' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Banamex sentiment' width='192'>
+      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
+      ANMIAKYRAEwjAJhGADCNAGAaAcA0AoBpBADTCACmEQBMIwCYRgAwjQBgGgHANAKAaQQA0wgA
+      phEATCMAmEYAMI0AYBoBwDQCgGkEANMIAKYRAEwjAJhGADCNAGAaAcA0AoBpBADTCACmEQBM
+      IwCYRgAwjQBgGgHANAKAaQQA0wgAphEATCMAmEYAMI0AYBoBwDQCgGkEANMIAKYRAEwjAJhG
+      ADCNAGAaAcA0AoBpBADTCACmEQBMIwCYRgAwjQBgGgHANAKAaQQA0wgAphEATCMAmEYAMI0A
+      YBoBwDQCgGkEANMIAKYRAEwjAJhGADCNAGAaAcA0AoBpBADTCACmEQBMIwCYRgAwjQBgGgHA
+      NAKAaQQA0wgAphEATCMAmEYAMI0AYBoBwDQCgGkEANMIAKYRAEwjAJhGADCNAGAaAcA0AoBp
+      BADTCACmEQBMIwCYRgAwjQBgGgHANAKAaQQA0wgAphEATCMAmEYAMI0AYBoBwDQCgGkEANMI
+      AKYRAEwjAJj2X/STG9+BxYegAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='184' name='Bancomer' width='192'>
+      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
+      IKn9P59DEEELJs4GAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Bancomer sentiment' width='192'>
+      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
+      GgHAtH8BrZ0aD4WFNb8AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 4' width='192'>
+      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
+      mIHhAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='184' name='Santander' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAAC4CAYAAAC1reOrAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAASA0lEQVR4nO3df1BU573H8TfLwoIrqy67MCqK0KJCjXaUhIhVRyvj2LEaJT+strHT1Kpj
+      Y2Jq5+ZWEw2amzhmQtMOI50bR0mvkSCoXEk6QUMn9kJCBwmlajQElCgaWFgqP+TH/jj3D2Qj
+      BRUFdo3P9zXDH55znmfPwfM55/ucc9jjp2mahhCK0vl6BYTwJQmAUJoEQChNAiCUJgEQSpMA
+      CKVJAITSJABCaRIAoTQJgFCaBEAoTQIglCYBEEqTAAilSQCE0iQAQmkSAKE0CYBQmgRAKE0C
+      IJQmARBKkwAIpUkAhNIkAEJpEgChNAmAUJoEQChNf6cFSkpKvLEeQviEn3w5rlCZlEBCaRIA
+      oTQJgFCaBEAoTQIglCYBEEqTAAilSQCE0iQAQmkSAKE0CYBQmgRAKE0CIJQmARBKkwAIpUkA
+      hNIkAEJpEgChNAmAUJoEQChNAiCUJgEQSpMACKVJAITSJABCaRIAoTQJgFCaBEAoTQIglCYB
+      EEqTAAilSQCE0iQAQmkSAKE0CYBQmgRAKE0CIJQmARBKu+N7goUYKnWNrV0//2oF4J9Vdd9M
+      /1fXvD3Nn+BvtaC3WtFbrQDorVb8rRaC4uIGvA4SAOFVdY2tnL5Qx0enLnD6Qt0dl3fabDht
+      Njr4vM/5hrhYguLiGPF48j2tj5RAXlZWVkZCQgJ6vZ5hw4axdetWOjo6ACguLiY2NhZ/f38m
+      TpxIfn7+Lfvp6Ohgx44dmEwm9Ho98+fPx263A9Dc3MyqVavQ6/WEhYVx5MgRT7vU1FSMRiNR
+      UVGUlpZ6pmdmZrJv374h2ea6xlYOfnSaLf9dwJrdx3gru7hfO39/dJz9nGvZOXy1YiVXnn2O
+      a9k5tJ892+/2cgbwopqaGrZu3crrr7/OnDlzsNvtrFu3jhMnTjB9+nS2bdvG/v37efjhhzl/
+      /jwbN24kKiqKmJiYXn2lpaXxj3/8g8rKSsxmMxcuXCAoKAjo2snHjBlDU1MTn3/+ORs3bmTK
+      lCkYDAYKCwuprq6mvLyc9PR00tPTaWhooLS0lG3btg3q9haUXuDgR6epa2wd1H5vxWmzcS07
+      B+gqk0Y8noxx7pzbtvHfvn37di+smwCGDx/OihUriI6ORqfTYTQacblcuN1uz89PfvIT/Pz8
+      sFqtGAwGKioqmD59eo9+7HY7qamp7N69m3HjxqHT6TCbzQQEBNDQ0MDevXtJSUnBbDYzZswY
+      7HY7tbW1BAUF4efnxw9/+ENCQ0MpKioiMTGRw4cPM2vWLL773e8OynbWNbbyX//zfxwr+oLW
+      dseA+vpR4/l7aue+fp22khJaPz5JwIRIz/jh30kJ5EU6nQ5/f3/Pvy9fvswHH3zAww8/jMVi
+      4cMPP+T06dMAtLW10dbWRmVlZa9+Ll++zOjRo/nOd77Ta15bWxsWiwXrTf/hM2fOpKGhgbFj
+      x1JUVER9fT0lJSW0tLRgs9lob28nMTFxwNtX19jKW9nFrNl9bNBKnIFy2mzUpeykNmUHTput
+      13wJgA+43W6OHTvGs88+y+uvv86ECROIiYlh06ZNLFy4ED8/PyIiInjnnXeoqanp1b61tZUr
+      V67wyCOPoNfrMRgM/OpXv6K5uZn29nYCAwMJCAjwLO/v709FRQXjx49n0aJFREdHs3btWjZu
+      3EhBQQGLFy9mzZo1BAYGsnTpUhobG+9qe7pr/DW7j1FQemHAv5+h0HH2c88Y4WYSAC9zuVzs
+      2rWLsrIyMjMziYiI8MxbtmwZNTU1aJpGQ0MDv/71r/s8ygOEh4dz5MgROjs7qa+vZ9iwYaSn
+      pxMUFERnZycOxzelh8vl8owjnnnmGZqamqioqOD69euMHDmSM2fOMGrUKFpbW5kxYwa5ubn9
+      3p66xla2vF1A5ken7/E34l3XsnO48uxznoGyBMDL0tPTiYiIYMuWLRgMhlsu53a7yc/PZ9q0
+      ab3mRUdHo9frMZvN6HQ6QkJCeOqppzh//jzBwcHU19dju+l0/8knnxAaGtqjj9bWVvLy8li4
+      cCF1dXUkJCQQEBBAUlKS52rSnXQf9b01yB0s3WVR68cnJQDeVFtbS3l5OcuXL0en6/mrdzqd
+      lJWV0dbWhsvlIi0tjcrKSubNm9erH6vVitls5q233qKzs5Pm5maysrKYNWsWoaGhTJ06ldTU
+      VK5fv86pU6c4evQoc+fO7dFHdnY2CQkJmEwmwsLCKC4uxuFwcPz4ccxm8223o7vk+bYc9W+l
+      YU+6BMCbqqurycrKYvjw4fj5+Xl+tm/fjl6v5/Dhw4SGhmIwGMjMzOTtt9/GZDIBcOjQIZ58
+      8kmgazD9u9/9josXLxISEkJ4eDgAK1euBGDTpk1cuXIFk8nEj3/8Y7Zs2dLjUmplZSVlZWUs
+      WLAAgAULFtDY2IjRaOTUqVMsXbr0ltvwoOz83fw0TdN8vRLi26G73vdmyfPHqv8d0v7lDCD6
+      xRc7vzdIAMQddV/ff9B2fpAAiH74qLR/D659G0kAxG0VlF54YAa8fZEAiFvqLn0eZBIA0afu
+      Qe+DTgIg+uTNx5h9SQIgeqlrbL1vH2obbBIA0cuDXvffTAIgejhdVffAXvLsiwRA9HDwAb7k
+      2RcJgPBQ7egPEgBxE9WO/iABEDd0f1+PaiQAAuh63kdFEgABdNX/KpIACGXLH5AACFB25wcJ
+      gAA+OqVm/Q8SAOWpXP6ABEB5KjzxeTsSAMV1v5xCVRIAxdXKGUAIdQ0gAE7sn2Ww+fF5zIyP
+      J372Y2zOKKfJM7uKnM2PMTs+npnzfsZrBVdxds+yf0bG5seZNzOe+PjZPLY5g/JvGlKVs5nH
+      ZscTP3MeP3utgKvOXh8uBomMAe5ZEWkvfcZDL77HxyUlFL27Gi3jef50CsDJqdT1pGmrebeo
+      hI//NI9zWzZzoPpGy7SX+OyhF3nv4xJKit5ltZbB810NcZ5KZX2axup3iyj5+E/MO7eFzd0N
+      xaCTANyr9hm8cPT3rI4PIxAIHDedqaObqLrYAPydDw4HkvzMMsYFQuDEp9mw9CrZeWeBdma8
+      cJTfr44nrKsh06eOpqnqIg3A3z84TGDyMyzrasjTG5ZyNTuP/r/1SdwNGQTfqyAjxpveMNZU
+      fpT885N4ND4Uqis455jOQ563WOoZO24cV6su0koQxp4NOZp/nkmPxhNKNRXnHEz/piH6seMY
+      d7WKi2r/Pw0Z1c8AA3tJnrOKnE3reePrH/DqH/6TAyXPdU2/Y8XipCpnE+vf+JofvPoH/vNA
+      Cc/1r6EYZGGjjD4PgWVYC5MtXzPJUssPxn/pme66pKetKmRIP3sAAWji5I71vNG0kgMHVxN9
+      c0+RMUwOyOafZ2FOHICTmkuXGB09ASPQdHIH699oYuWBg6zu2ZCYyQFkf9MQZ80lLo2OZoLx
+      3tdU3FrYSN8EwDKshVnjv2SypZbJlq/7XMZ1eehfYnrvn1BzjL3vW1iX8287PwCP8KPlnfx2
+      7xGWvLaM8IvvkJY7ksUZcUANx/a+j2Vdzr/t/Dda/mg5nb/dy5Elr7Es/CLvpOUycnEGA38n
+      uOhL2CgjeOFRIMuwlhs7faXniH8nrksBd1xmoO49AJVfcIbznEmO5483TZ70bA4HVkcyY9Me
+      Nrz4AisTX8UZEsuSV9N4ZiJAJV+cgfNnkonv2ZCcA6uJnLGJPRte5IWVibzqDCF2yaukdTUU
+      3zK3Km36w92k88oZQF6QobjBfttLf0qb/nBd0tN2aGjrf5A3xSsvfNTABlc3H+UnW77GMqxl
+      UNbLG0d/kAAoL2zk3Qege6efNb5yQEf52/FG/Q8SAOVNiQ7r13KDVdr0l7vJO4+pSQAE86dH
+      9foy3IEMYAfK3aRDkwAIb3koOoyC0gteKW36Q7vmvYeUJQCC+dOjCPo6xac7/c28NQAG+XsA
+      cUPc2Pvnari3BsAgARA3GCwLfL0KgPdugHWTAAgAdIZwX68C4N36HyQA4gaDJQl9yFRfr4ZX
+      j/4gARA3MVh9XwZ5s/4HCYC4yf1wFvDWDbBuEgDRQ/DYVT77bG/eAOsmARA9BJim+uws4O0B
+      MEgARB98dRbw9gAYJACiDwGmqRgsSV7/XG8PgEECIG7B22cBb98A6yYBEH3SGcIJmbzLa5/n
+      i/ofJADiNgJMU70WAl8c/UECIO7AW+MBX9T/IAEQ/WCMfmHIL43KGUDc10yxu4YsBN6++3sz
+      CYDot+HRLwzJU6O+GgCDBEDcBZ0hHNPkwT8T+Kr8AQmAuEs6Qzim2F2Dep/AVwNgkL8JFvco
+      eOxP0RnCaa16c0D9+OoGmN5qxTh3jgRA3DuDJQldYDjN5/7jnvvwRf2vt1oxr19LUFycfDeo
+      GDh3Ry0d9cdpqzlw1207Pwmi85PgIVirvhnnzmHE48norVZAvhxXDCJ3Ry0tVW/ibC7vd5u2
+      rBCvlECGuFhGPJ5MUFzPL9qXQfB9wGazsXPnTiZNmsShQ4d6zHO73WRkZBAWFoa/vz9Tp07l
+      3LlzffZTWFhIbGws/v7+hIWFkZGRgdvtBqC4uNgzb+LEieTn53vapaamYjQaiYqKorS01DM9
+      MzOTffv29Xs7ugfII6ft7/eVoqHe+fVWK2EvbyX85Zd67fwgAfC5pqYmNmzYQEREBC+//HKv
+      +e+//z579+6lsLAQh8PBsWPHCA/vfS2+traWbdu2sW/fPhwOB4WFhWRkZHDy5EmuXr3Ktm3b
+      2L9/Pw6Hg9zcXHbv3k1FRQVfffUVhYWFVFdXs3fvXtLT03G73dhsNkpLS3nyySfvepu6gxAy
+      eddt7xsM5Q0wvdVK6Pp1jPnjW33u+J7lhmwNRL+YTCaysrIAeh39HQ4HmZmZpKSkEBMTA0Bk
+      ZGSf/VRXVxMdHc2jjz4KQExMDD//+c+x2WwYDAZmz55NQkICALGxsfzyl7/k5MmTxMXFkZiY
+      iMViIT4+nry8PFpaWsjNzWXJkiUYjff+9ekBpqmMnLbfM0boqD+Bu6PWM3+wB8DdV3YMcbG3
+      3el7tBnUNRCDym63o9Pp+P73v3/HZb/3ve9x7do1Tpw4wfz586msrCQ/P5+dO3ficDj48MMP
+      Wbp0KVOmTKGtrY22tjYqKytJSkqiqKiIp59+mvLyclpaWrDZbLS3t5OYmDgo26EzhBM89qcE
+      j/2pJwyOpn/SfrZyQP3qrVb8rRaGz52LIS7WM7C9qz4GtAZiSDkcDurr61m+fDmFhYW4XC4W
+      LVrEnj17iIiI6LGs0WgkLS2NFStWkJSURGRkJAcPHmTChAkAbNq0iYULF3LlyhXMZjPTpk1j
+      3LhxjB8/nkWLFhEdHU14eDhHjhyhoKCAxYsXs2bNGv785z+zaNEi9u/fz6hRowa8Td+EAYat
+      s+G02XDZ6nHabAA4bT2nde/k3Tt395Hd32rp91H+tjRx38jKytKysrI8/7506ZKWnJysnT17
+      VnM6nVpHR4f25ptvamvXrtVcLlePtna7XVu1apX26aefai6XS/viiy+0p556Svv000/7/Kyc
+      nBztlVde6TW9uLhYy8rK0vLy8rTf/OY3Wmdnp/bKK69o+/btG9RtvV/IIPg+FhoaitVqZcSI
+      Efj7+xMYGMgTTzyB3W6npaXnq4j++te/MnHiRBISEtDpdMTExJCcnMxf/vKXXv263W7y8/OZ
+      Nm1aj+mtra3k5eWxcOFC6urqSEhIICAggKSkJOx2+5Buq69IAO5jwcHBzJgxgx07dtDc3Exn
+      ZyeHDh0iJiYGk8nUY9no6Gj+9re/cfr0ac9VnPfee4/IyEicTidlZWW0tbXhcrlIS0ujsrKS
+      efPm9egjOzubhIQETCYTYWFhFBcX43A4OH78OGaz2Zub7j2+PgWp7tKlS1pERIQG9Ph54okn
+      NE3TtPb2di0lJUULCQnRAgMDteTkZM1ut2ua1lUydS+naZqWm5urRUVFaYBmNpu1lJQUrb29
+      XdM0TXvppZe04OBgzd/fX0tMTNQuXrzYYz2+/PJL7fnnn/cs397erv3iF7/QAgICtCVLlng+
+      80Ejd4KF0qQEEkqTAAilSQCE0iQAQmkSAKE0CYBQmgRAKE0CIJQmARBKkwAIpUkAhNIkAEJp
+      EgChNAmAUJoEQChNAiCUJgEQSpMACKVJAITSJABCaRIAoTQJgFCaBEAoTQIglCYBEEqTAAil
+      SQCE0iQAQmkSAKE0CYBQmgRAKE0CIJT2/6rivA8noe57AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Santander sentiment' width='192'>
+      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
+      jQBgGgHANAKAaQQA0wgAphEATCMAmEYAMI0AYBoBwDQCgGkEANMIAKYRAEwjAJhGADCNAGAa
+      AcA0AoBpBADTCACmEQBMIwCYRgAwjQBgGgHANAKAaQQA0wgAphEATCMAmEYAMI0AYBoBwDQC
+      gGkEANMIAKYRAEwjAJhGADCNAGAaAcA0AoBpBADTCACmEQBMIwCYRgAwjQBgGgHANAKAaQQA
+      0wgAphEATCMAmEYAMI0AYBoBwDQCgGkEANMIAKYRAEwjAJhGADCNAGAaAcA0AoBpBADTCACm
+      EQBMIwCYRgAwjQBgGgHANAKAaQQA0wgAphEATCMAmEYAMI0AYBoBwDQCgGkEANMIAKYRAEwj
+      AJhGADCNAGAaAcA0AoBpBADTCACmEQBMIwCYRgAwjQBgGgHANAKAaQQA0wgAphEATCMAmEYA
+      MI0AYBoBwDQCgGkEANMIAKYRAEwjAJhGADCNAGAaAcA0AoBpBADTCACmEQBMIwCYRgAwjQBg
+      GgHANAKAaQQA0/4DCAdDn5e/wL4AAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
